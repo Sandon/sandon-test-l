@@ -1,10 +1,10 @@
 {
   "name": "L翻译",
-  "description": "汇集各主流翻译引擎，方便选择和使用",
+  "description": "汇集各主流翻译引擎，方便您的选择和使用",
   "version": "0.1",
   "permissions": ["contextMenus"],
   "background": {
-    "scripts": ["sample.js"]
+    "scripts": ["LTranslation.js"]
   },
   "manifest_version": 2
 }
