@@ -1,6 +1,12 @@
 //create a configure context item for 'page' context type
+alert("haha");
+console.log("haha");
+var targetName="google";
+var targetUrl="http://www.google.com";
 function optionsOnClick(info, tab){
-    window.location.href="www.google.com";
+    chrome.tabs.create({"url":targetUrl});
 }
-var id = chrome.contextMenus.create({"title": "≈‰÷√'L∑≠“Î'", "contexts":["page"],
-    "onclick": genericOnClick});
+var id = chrome.contextMenus.create({"title": "ÈÖçÁΩÆ'LÁøªËØë'", "contexts":["page"],
+    "onclick": optionsOnClick});
+
+//chrome.contextMenus.onClicked.addListener(optionsOnClick);

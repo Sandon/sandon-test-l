@@ -2,7 +2,7 @@
   "name": "L翻译",
   "description": "汇集各主流翻译引擎，方便选择和使用",
   "version": "0.1",
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus","tabs"],
   "background": {
     "scripts": ["LTranslation.js"]
   },
