@@ -1,0 +1,38 @@
+body{
+    background-color: #dee;
+    color: #000;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+#doc{
+    width: 570px;
+    padding: 15px;
+    border: 4px solid green;
+    border-radius: 10px;
+    margin: 100px auto 0;
+    background-color: #fff;
+}
+#doc .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#doc .engines{
+    height: 40px;
+    line-height: 40px;
+}
+#doc .engines .label{
+    float: left;
+    height: 40px;
+    padding-left: 190px;
+}
+#doc .engines .selects-wrap{
+    float: left;
+    height: 40px;
+}
+#doc .btns{
+    text-align: center;
+    padding-top: 7px;
+}
