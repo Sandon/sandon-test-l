@@ -1,10 +1,21 @@
 {
-  "name": "L翻译",
-  "description": "汇集各主流翻译引擎，方便选择和使用",
-  "version": "0.1",
-  "permissions": ["contextMenus","tabs"],
-  "background": {
-    "scripts": ["LTranslation.js"]
-  },
-  "manifest_version": 2
+    "name": "翻译汇",
+    "description": "汇集各主流翻译引擎，方便选择和使用",
+    "version": "0.1",
+    "permissions": ["contextMenus"],
+    "background": {
+        "scripts": ["js/LTranslation.js"]
+    },
+    "icons": {
+        "16": "img/16.png",
+        "48": "img/48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "options_page": "options.html",
+    "manifest_version": 2
 }
