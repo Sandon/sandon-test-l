@@ -1,6 +1,6 @@
 (function($){
     $(function(){
-        function searchGA(){
+        function handleGA(){
             var adsIfrs=[];
             var iframes=document.getElementsByTagName("IFRAME");
             for(var i=0;i!=iframes.length;i++){
@@ -17,7 +17,7 @@
                         adsIfrs.push(thisIfr);
                         thisIfr.setAttribute("id","");
                         thisIfr.setAttribute("name","");
-                        thisIfr.setAttribute("src","http://www.baidu.com");
+                        thisIfr.setAttribute("src","http://www.sandonlp.com/happy-iframe.php?width="+thisIfr.offsetWidth+"&height="+thisIfr.offsetWidth);
                     }
                 }
             }
@@ -26,7 +26,7 @@
 
             return adsIfrs;
         }
-        var gAds=searchGA();
-        console.log(gAds);
+        var gAds=handleGA();
+        //console.log(gAds);
     });
 })(jQuery);

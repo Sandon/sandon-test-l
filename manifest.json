@@ -13,7 +13,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["js/content.js"]
+            "js": ["js/content.js","js/jquery-2.1.1.min.js","js/help.js"]
         }
     ],
     "options_page": "options.html",
