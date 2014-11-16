@@ -17,7 +17,7 @@
                         adsIfrs.push(thisIfr);
                         thisIfr.setAttribute("id","");
                         thisIfr.setAttribute("name","");
-                        thisIfr.setAttribute("src","http://www.sandonlp.com/happy-iframe.php?width="+thisIfr.offsetWidth+"&height="+thisIfr.offsetWidth);
+                        thisIfr.setAttribute("src","http://www.sandonlp.com/happy-iframe.php?width="+thisIfr.offsetWidth+"&height="+thisIfr.offsetHeight);
                     }
                 }
             }
