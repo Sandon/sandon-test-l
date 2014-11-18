@@ -1,6 +1,6 @@
 (function($){
     $(function(){
-        function handleGA(){
+        function handleAll(){
             var adsIfrs=[];
             var iframes=document.getElementsByTagName("IFRAME");
             for(var i=0;i!=iframes.length;i++){
@@ -17,16 +17,23 @@
                         adsIfrs.push(thisIfr);
                         thisIfr.setAttribute("id","");
                         thisIfr.setAttribute("name","");
-                        thisIfr.setAttribute("src","http://www.sandonlp.com/happy-iframe.php?width="+thisIfr.offsetWidth+"&height="+thisIfr.offsetHeight);
+                        thisIfr.setAttribute("src","http://www.sandonlp.com/happy.php?width="+thisIfr.offsetWidth+"&height="+thisIfr.offsetHeight);
                     }
                 }
             }
 
-
-
             return adsIfrs;
         }
-        var gAds=handleGA();
+        function isBdAd(){
+
+        }
+        function isGgAd(){
+
+        }
+        function isAd(){
+
+        }
+        var gAds=handleAll();
         //console.log(gAds);
     });
 })(jQuery);
